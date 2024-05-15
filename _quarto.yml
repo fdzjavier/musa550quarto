@@ -25,7 +25,7 @@ website:
     collapse-level: 2
     contents:
       - href: index.qmd
-        text: Welcome
+        text: Project Purpose
       - about.qmd
       - section: analysis/index.qmd
         contents:
