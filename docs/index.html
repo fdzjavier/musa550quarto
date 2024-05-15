@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Welcome</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Project Purpose</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -107,13 +107,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Welcome</span></a>
+ <span class="menu-text">Project Purpose</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./about.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Exploration</span></a>
+ <span class="menu-text">Methodology</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -161,8 +161,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome!</a></li>
-  <li><a href="#find-out-more" id="toc-find-out-more" class="nav-link" data-scroll-target="#find-out-more">Find out more</a></li>
+  <li><a href="#project-purpose" id="toc-project-purpose" class="nav-link active" data-scroll-target="#project-purpose">Project Purpose</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/fdzjavier/musa550quarto/blob/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div></nav>
     </div>
@@ -172,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Predicting Changing Zillow House Values in Newark, NJ</h1>
-<p class="subtitle lead">An example website demonstrating the power of Quarto for sharing analyses on the web</p>
+<p class="subtitle lead">An Exploration of Predicting Housing Prices Across Census Tracts</p>
 </div>
 
 
@@ -189,10 +188,11 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="welcome" class="level2">
-<h2 class="anchored" data-anchor-id="welcome">Welcome!</h2>
-<p>We can create beautiful websites that describe complex technical analyses in Python using <a href="https://quarto.org">Quarto</a> and deploy them online using <a href="https://pages.github.com/">GitHub Pages</a>. This combination of tools is a really powerful way to create and share your work. This website is a demo that is meant to be used to create your own Quarto website for the final project in MUSA 550.</p>
-<p>Quarto is a relatively new tool, but is becoming popular quickly. It’s a successor to the Rmarkdown ecosystem that combines functionality into a single tool and also extends its computation power to other languages. Most importantly for us, Quarto supports executing Python code, allowing us to convert Jupyter notebooks to HTML and share them online.</p>
+<section id="project-purpose" class="level2">
+<h2 class="anchored" data-anchor-id="project-purpose">Project Purpose</h2>
+<p>The aim of this project was to extend the application of our housing prediction model to a new city: Newark, New Jersey. As the largest city in the state, Newark is strategically located with easy access to New York City through various transportation modes, making it an vital hub within New Jersey and the larger New York Metropolitan Area. Home to significant institutions like Rutgers University, the Prudential Center, and Newark Liberty International Airport, Newark also serves as a vital center for employment and opportunities.</p>
+<p>However, in recent years, the city has witnessed a surge in development interest, accompanied by concerns among residents regarding escalating rents and an influx of wealthier populations. Thus, it became imperative to undertake this project, delving into the current dynamics of housing sales (or a proxy thereof) and crafting predictive models—both linear and random forest—that could anticipate changes in the Zillow Home Value Index (ZHVI) based on diverse sociodemographic factors.</p>
+<p>Despite its limitations, this approach involved innovative techniques such as API utilization, ZHVI data aggregation from zip codes to census tracts, and comprehensive incorporation of crucial predictors at the census tract level. Moving forward, it’s crucial to consideri refining the model by accessing more granular ZHVI data, ideally at the census tract or individual home-sale level. This project highlights the need for further investigation into Newark’s changing real estate market and how it affects its residents, given the limited data available.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -203,14 +203,11 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This template site, including the layout it uses, is just a suggested place to start! For your final project, you’re welcome (and encouraged) to make as many changes as you like to best fit your project.</p>
+<p>Datasets referenced: Zip Codes: https://data.ci.newark.nj.us/dataset/new-jersey-zip-codes-polygon</p>
+<p>Zillow Data: https://www.zillow.com/research/data/</p>
+<p>Census: referenced through its API</p>
 </div>
 </div>
-</section>
-<section id="find-out-more" class="level2">
-<h2 class="anchored" data-anchor-id="find-out-more">Find out more</h2>
-<p>The code for this repository is hosted on our course’s GitHub page: <a href="https://github.com/MUSA-550-Fall-2023/quarto-website-template">https://github.com/MUSA-550-Fall-2023/quarto-website-template</a>.</p>
-<p>We covered the basics of getting started with Quarto and GitHub Pages in week 9. Take a look at <a href="https://musa-550-fall-2023.github.io/content/week-9/lecture-9A.html">the slides for lecture 9A</a> to find out more.</p>
 
 
 </section>

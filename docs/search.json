@@ -4,29 +4,19 @@
     "href": "index.html",
     "title": "Predicting Changing Zillow House Values in Newark, NJ",
     "section": "",
-    "text": "We can create beautiful websites that describe complex technical analyses in Python using Quarto and deploy them online using GitHub Pages. This combination of tools is a really powerful way to create and share your work. This website is a demo that is meant to be used to create your own Quarto website for the final project in MUSA 550.\nQuarto is a relatively new tool, but is becoming popular quickly. It’s a successor to the Rmarkdown ecosystem that combines functionality into a single tool and also extends its computation power to other languages. Most importantly for us, Quarto supports executing Python code, allowing us to convert Jupyter notebooks to HTML and share them online.\n\n\n\n\n\n\nImportant\n\n\n\nThis template site, including the layout it uses, is just a suggested place to start! For your final project, you’re welcome (and encouraged) to make as many changes as you like to best fit your project.",
+    "text": "The aim of this project was to extend the application of our housing prediction model to a new city: Newark, New Jersey. As the largest city in the state, Newark is strategically located with easy access to New York City through various transportation modes, making it an vital hub within New Jersey and the larger New York Metropolitan Area. Home to significant institutions like Rutgers University, the Prudential Center, and Newark Liberty International Airport, Newark also serves as a vital center for employment and opportunities.\nHowever, in recent years, the city has witnessed a surge in development interest, accompanied by concerns among residents regarding escalating rents and an influx of wealthier populations. Thus, it became imperative to undertake this project, delving into the current dynamics of housing sales (or a proxy thereof) and crafting predictive models—both linear and random forest—that could anticipate changes in the Zillow Home Value Index (ZHVI) based on diverse sociodemographic factors.\nDespite its limitations, this approach involved innovative techniques such as API utilization, ZHVI data aggregation from zip codes to census tracts, and comprehensive incorporation of crucial predictors at the census tract level. Moving forward, it’s crucial to consideri refining the model by accessing more granular ZHVI data, ideally at the census tract or individual home-sale level. This project highlights the need for further investigation into Newark’s changing real estate market and how it affects its residents, given the limited data available.\n\n\n\n\n\n\nImportant\n\n\n\nDatasets referenced: Zip Codes: https://data.ci.newark.nj.us/dataset/new-jersey-zip-codes-polygon\nZillow Data: https://www.zillow.com/research/data/\nCensus: referenced through its API",
     "crumbs": [
-      "Welcome"
+      "Project Purpose"
     ]
   },
   {
-    "objectID": "index.html#welcome",
-    "href": "index.html#welcome",
+    "objectID": "index.html#project-purpose",
+    "href": "index.html#project-purpose",
     "title": "Predicting Changing Zillow House Values in Newark, NJ",
     "section": "",
-    "text": "We can create beautiful websites that describe complex technical analyses in Python using Quarto and deploy them online using GitHub Pages. This combination of tools is a really powerful way to create and share your work. This website is a demo that is meant to be used to create your own Quarto website for the final project in MUSA 550.\nQuarto is a relatively new tool, but is becoming popular quickly. It’s a successor to the Rmarkdown ecosystem that combines functionality into a single tool and also extends its computation power to other languages. Most importantly for us, Quarto supports executing Python code, allowing us to convert Jupyter notebooks to HTML and share them online.\n\n\n\n\n\n\nImportant\n\n\n\nThis template site, including the layout it uses, is just a suggested place to start! For your final project, you’re welcome (and encouraged) to make as many changes as you like to best fit your project.",
+    "text": "The aim of this project was to extend the application of our housing prediction model to a new city: Newark, New Jersey. As the largest city in the state, Newark is strategically located with easy access to New York City through various transportation modes, making it an vital hub within New Jersey and the larger New York Metropolitan Area. Home to significant institutions like Rutgers University, the Prudential Center, and Newark Liberty International Airport, Newark also serves as a vital center for employment and opportunities.\nHowever, in recent years, the city has witnessed a surge in development interest, accompanied by concerns among residents regarding escalating rents and an influx of wealthier populations. Thus, it became imperative to undertake this project, delving into the current dynamics of housing sales (or a proxy thereof) and crafting predictive models—both linear and random forest—that could anticipate changes in the Zillow Home Value Index (ZHVI) based on diverse sociodemographic factors.\nDespite its limitations, this approach involved innovative techniques such as API utilization, ZHVI data aggregation from zip codes to census tracts, and comprehensive incorporation of crucial predictors at the census tract level. Moving forward, it’s crucial to consideri refining the model by accessing more granular ZHVI data, ideally at the census tract or individual home-sale level. This project highlights the need for further investigation into Newark’s changing real estate market and how it affects its residents, given the limited data available.\n\n\n\n\n\n\nImportant\n\n\n\nDatasets referenced: Zip Codes: https://data.ci.newark.nj.us/dataset/new-jersey-zip-codes-polygon\nZillow Data: https://www.zillow.com/research/data/\nCensus: referenced through its API",
     "crumbs": [
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "index.html#find-out-more",
-    "href": "index.html#find-out-more",
-    "title": "Predicting Changing Zillow House Values in Newark, NJ",
-    "section": "Find out more",
-    "text": "Find out more\nThe code for this repository is hosted on our course’s GitHub page: https://github.com/MUSA-550-Fall-2023/quarto-website-template.\nWe covered the basics of getting started with Quarto and GitHub Pages in week 9. Take a look at the slides for lecture 9A to find out more.",
-    "crumbs": [
-      "Welcome"
+      "Project Purpose"
     ]
   },
   {
@@ -87,11 +77,11 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "Data Exploration",
+    "title": "Methodology",
     "section": "",
-    "text": "The methodology for this code involved several key steps. First, zip code data, including geometry, was imported and merged with Zillow data containing ZHVI change values from 2020 to 2022. Next, the Census API was utilized to obtain census tract information. The centroids of the census tract dataframes were then calculated to assign each census tract to its corresponding zip code, serving as a proxy for allocating ZHVI change values to the census tract level. Missing values were imputed with the mean ZHVI value. Subsequently, the final geodataframe was incorporated into both a linear regression and a random forest model. A 30-70 testing-training split was applied to both models, and their accuracies were compared for the testing and training data splits. Additionally, a cross-validation test with 3 folds was conducted to further assess model performance.",
+    "text": "The methodology for this code involved several key steps. First, zip code data, including geometry, was imported and merged with Zillow data containing ZHVI change values from 2020 to 2022.\nNext, the Census API was utilized to obtain census tract information. The centroids of the census tract dataframes were then calculated to assign each census tract to its corresponding zip code, serving as a proxy for allocating ZHVI change values to the census tract level. Missing values were imputed with the mean ZHVI value.\nSubsequently, the final geodataframe was incorporated into both a linear regression and a random forest model. A 30-70 testing-training split was applied to both models, and their accuracies were compared for the testing and training data splits.\nAdditionally, a cross-validation test with 3 folds was conducted to further assess model performance.",
     "crumbs": [
-      "Data Exploration"
+      "Methodology"
     ]
   },
   {

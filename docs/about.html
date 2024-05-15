@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>MUSA 550 Quarto Template - Data Exploration</title>
+<title>MUSA 550 Quarto Template - Methodology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./about.html">Data Exploration</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./about.html">Methodology</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -107,13 +107,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Welcome</span></a>
+ <span class="menu-text">Project Purpose</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./about.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Data Exploration</span></a>
+ <span class="menu-text">Methodology</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -164,7 +164,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Exploration</h1>
+<h1 class="title">Methodology</h1>
 </div>
 
 
@@ -185,11 +185,14 @@ ul.task-list li input[type="checkbox"] {
 <div class="grid">
 <!-- Left column has a width of 4/12 and shows a picture of me -->
 <div class="g-col-4">
-<p><img src="images/nickhand-profile.jpg" class="img-fluid" style="width:3in"></p>
+<p><img src="images/NewarkLogo.jpg" class="img-fluid" style="width:3in"></p>
 </div>
 <!-- Text gets a column with width 8/12 -->
 <div class="g-col-8">
-<p>The methodology for this code involved several key steps. First, zip code data, including geometry, was imported and merged with Zillow data containing ZHVI change values from 2020 to 2022. Next, the Census API was utilized to obtain census tract information. The centroids of the census tract dataframes were then calculated to assign each census tract to its corresponding zip code, serving as a proxy for allocating ZHVI change values to the census tract level. Missing values were imputed with the mean ZHVI value. Subsequently, the final geodataframe was incorporated into both a linear regression and a random forest model. A 30-70 testing-training split was applied to both models, and their accuracies were compared for the testing and training data splits. Additionally, a cross-validation test with 3 folds was conducted to further assess model performance.</p>
+<p>The methodology for this code involved several key steps. First, zip code data, including geometry, was imported and merged with Zillow data containing ZHVI change values from 2020 to 2022.</p>
+<p>Next, the Census API was utilized to obtain census tract information. The centroids of the census tract dataframes were then calculated to assign each census tract to its corresponding zip code, serving as a proxy for allocating ZHVI change values to the census tract level. Missing values were imputed with the mean ZHVI value.</p>
+<p>Subsequently, the final geodataframe was incorporated into both a linear regression and a random forest model. A 30-70 testing-training split was applied to both models, and their accuracies were compared for the testing and training data splits.</p>
+<p>Additionally, a cross-validation test with 3 folds was conducted to further assess model performance.</p>
 </div>
 </div>
 
