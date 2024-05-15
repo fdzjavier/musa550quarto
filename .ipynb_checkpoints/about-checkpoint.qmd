@@ -1,5 +1,5 @@
 ---
-title: "Data Exploration"
+title: "Methodology"
 ---
 
 <!-- Use a grid -->
@@ -7,13 +7,19 @@ title: "Data Exploration"
 
 <!-- Left column has a width of 4/12 and shows a picture of me -->
 ::: {.g-col-4}
-![](images/nickhand-profile.jpg){width=3in}
+![](images/Newark.jpg){width=3in}
 :::
 
 <!-- Text gets a column with width 8/12 -->
 ::: {.g-col-8}
 
-The methodology for this code involved several key steps. First, zip code data, including geometry, was imported and merged with Zillow data containing ZHVI change values from 2020 to 2022. Next, the Census API was utilized to obtain census tract information. The centroids of the census tract dataframes were then calculated to assign each census tract to its corresponding zip code, serving as a proxy for allocating ZHVI change values to the census tract level. Missing values were imputed with the mean ZHVI value. Subsequently, the final geodataframe was incorporated into both a linear regression and a random forest model. A 30-70 testing-training split was applied to both models, and their accuracies were compared for the testing and training data splits. Additionally, a cross-validation test with 3 folds was conducted to further assess model performance.
+The methodology for this code involved several key steps. First, zip code data, including geometry, was imported and merged with Zillow data containing ZHVI change values from 2020 to 2022. 
+
+Next, the Census API was utilized to obtain census tract information. The centroids of the census tract dataframes were then calculated to assign each census tract to its corresponding zip code, serving as a proxy for allocating ZHVI change values to the census tract level. Missing values were imputed with the mean ZHVI value. 
+
+Subsequently, the final geodataframe was incorporated into both a linear regression and a random forest model. A 30-70 testing-training split was applied to both models, and their accuracies were compared for the testing and training data splits. 
+
+Additionally, a cross-validation test with 3 folds was conducted to further assess model performance.
 ::: 
 
 :::

@@ -15,7 +15,7 @@ website:
     left: "&copy; CC-Javier Fernandez, 2023"
 
   sidebar:
-    logo: "images/NewarkLogo.png"
+    logo: "images/Newark.png"
     pinned: true
     align: center
          
