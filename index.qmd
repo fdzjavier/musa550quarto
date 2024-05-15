@@ -1,5 +1,5 @@
 ---
-title: "MUSA 550 Final Project Template"
+title: "Predicting Changing Zillow House Values in Newark, NJ"
 subtitle: "An example website demonstrating the power of Quarto for sharing analyses on the web"
 ---
 
