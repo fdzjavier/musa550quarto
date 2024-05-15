@@ -79,7 +79,7 @@
     "href": "about.html",
     "title": "Methodology",
     "section": "",
-    "text": "The methodology for this code involved several key steps. First, zip code data, including geometry, was imported and merged with Zillow data containing ZHVI change values from 2020 to 2022.\nNext, the Census API was utilized to obtain census tract information. The centroids of the census tract dataframes were then calculated to assign each census tract to its corresponding zip code, serving as a proxy for allocating ZHVI change values to the census tract level. Missing values were imputed with the mean ZHVI value.\nSubsequently, the final geodataframe was incorporated into both a linear regression and a random forest model. A 30-70 testing-training split was applied to both models, and their accuracies were compared for the testing and training data splits.\nAdditionally, a cross-validation test with 3 folds was conducted to further assess model performance.",
+    "text": "The methodology for this code involved several key steps.\n\n\nFirst, a statewide New Jersey ZIP code data (in json format) was imported using an API call and merged with Zillow data containing ZHVI change values from 2020 to 2022.\nNext, the Census API was utilized to obtain census tract information. The centroids of the census tract dataframes were then calculated to assign each census tract to its corresponding zip code, serving as a proxy for allocating ZHVI change values to the census tract level. Missing values were imputed with the mean ZHVI value.\n\n\n\nA final geodataframe was incorporated into both a linear regression and a random forest model. A 30-70 testing-training split was applied to both models, and their accuracies were compared for the testing and training data splits. Additionally, a cross-validation test with 3 folds was conducted to further assess model performance.",
     "crumbs": [
       "Methodology"
     ]
@@ -136,6 +136,46 @@
     "text": "Analysis\nThis section includes examples of technical analysis done using Jupyter notebooks. Each sub-section highlights different types of analyses and visualizations. In particular, it highlights that we can easily publish interactive visualizations produced with packages such as hvPlot, altair, or Folium, without losing any of the interactive features.\nOn this page, you might want to share more introductory or background information about the analyses to help guide the reader.",
     "crumbs": [
       "Analysis"
+    ]
+  },
+  {
+    "objectID": "about.html#data-prepartionthe-methodology-for-this-code-involved-several-key-steps.",
+    "href": "about.html#data-prepartionthe-methodology-for-this-code-involved-several-key-steps.",
+    "title": "Methodology",
+    "section": "",
+    "text": "First, zip code data, including geometry, was imported and merged with Zillow data containing ZHVI change values from 2020 to 2022.\nNext, the Census API was utilized to obtain census tract information. The centroids of the census tract dataframes were then calculated to assign each census tract to its corresponding zip code, serving as a proxy for allocating ZHVI change values to the census tract level. Missing values were imputed with the mean ZHVI value.\nSubsequently, the final geodataframe was incorporated into both a linear regression and a random forest model. A 30-70 testing-training split was applied to both models, and their accuracies were compared for the testing and training data splits.\nAdditionally, a cross-validation test with 3 folds was conducted to further assess model performance.",
+    "crumbs": [
+      "Methodology"
+    ]
+  },
+  {
+    "objectID": "about.html#data-prepartion",
+    "href": "about.html#data-prepartion",
+    "title": "Methodology",
+    "section": "",
+    "text": "First, a statewide New Jersey ZIP code data (in json format) was imported using an API call and merged with Zillow data containing ZHVI change values from 2020 to 2022.\nNext, the Census API was utilized to obtain census tract information. The centroids of the census tract dataframes were then calculated to assign each census tract to its corresponding zip code, serving as a proxy for allocating ZHVI change values to the census tract level. Missing values were imputed with the mean ZHVI value.",
+    "crumbs": [
+      "Methodology"
+    ]
+  },
+  {
+    "objectID": "about.html#mo",
+    "href": "about.html#mo",
+    "title": "Methodology",
+    "section": "",
+    "text": "Subsequently, the final geodataframe was incorporated into both a linear regression and a random forest model. A 30-70 testing-training split was applied to both models, and their accuracies were compared for the testing and training data splits.\nAdditionally, a cross-validation test with 3 folds was conducted to further assess model performance.",
+    "crumbs": [
+      "Methodology"
+    ]
+  },
+  {
+    "objectID": "about.html#model",
+    "href": "about.html#model",
+    "title": "Methodology",
+    "section": "",
+    "text": "A final geodataframe was incorporated into both a linear regression and a random forest model. A 30-70 testing-training split was applied to both models, and their accuracies were compared for the testing and training data splits. Additionally, a cross-validation test with 3 folds was conducted to further assess model performance.",
+    "crumbs": [
+      "Methodology"
     ]
   }
 ]

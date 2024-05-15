@@ -189,10 +189,16 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <!-- Text gets a column with width 8/12 -->
 <div class="g-col-8">
-<p>The methodology for this code involved several key steps. First, zip code data, including geometry, was imported and merged with Zillow data containing ZHVI change values from 2020 to 2022.</p>
+<p>The methodology for this code involved several key steps.</p>
+<section id="data-prepartion" class="level2">
+<h2 class="anchored" data-anchor-id="data-prepartion">Data Prepartion</h2>
+<p>First, a statewide New Jersey ZIP code data (in json format) was imported using an API call and merged with Zillow data containing ZHVI change values from 2020 to 2022.</p>
 <p>Next, the Census API was utilized to obtain census tract information. The centroids of the census tract dataframes were then calculated to assign each census tract to its corresponding zip code, serving as a proxy for allocating ZHVI change values to the census tract level. Missing values were imputed with the mean ZHVI value.</p>
-<p>Subsequently, the final geodataframe was incorporated into both a linear regression and a random forest model. A 30-70 testing-training split was applied to both models, and their accuracies were compared for the testing and training data splits.</p>
-<p>Additionally, a cross-validation test with 3 folds was conducted to further assess model performance.</p>
+</section>
+<section id="model" class="level2">
+<h2 class="anchored" data-anchor-id="model">Model</h2>
+<p>A final geodataframe was incorporated into both a linear regression and a random forest model. A 30-70 testing-training split was applied to both models, and their accuracies were compared for the testing and training data splits. Additionally, a cross-validation test with 3 folds was conducted to further assess model performance.</p>
+</section>
 </div>
 </div>
 

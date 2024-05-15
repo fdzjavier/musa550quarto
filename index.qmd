@@ -1,6 +1,6 @@
 ---
 title: "Predicting Changing Zillow House Values in Newark, NJ"
-subtitle: "An Exploration of Predicting Housing Prices Across Census Tracts"
+subtitle: "By: Javier Fernandez"
 ---
 
 ## Project Purpose
